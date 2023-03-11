@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+<title>My Model Website: Model Profiles</title>
+<meta name="description" content="This is the model profiles page for my model agency website">
+
+{% endblock %}
+
+{% block main %}
+
+<div class="container">
+
+    <div class="content">
+
+        <h1>Model Profiles</h1>
+
+        <div style="width:70%; padding-top: 10px; margin:0 auto;" id="dashbord_menu">
+            <form action="/admin">
+                <button id="dashboard_button" type="submit">Return To Dashboard</button><br>
+            </form>
+            <form action="/add_model">
+                <button id="dashboard_button" type="submit">Add A New Model</button><br>
+            </form>
+            
+            {% if not models_list %}
+                <p id=empty_list> THERE ARE NO MODELS TO DISPLAY </p>
+            {% endif %}
+            
+            <table style="width:80%; margin:0 auto;" id="model_table">
+                <thead>
+                {% for row in models_list %}
+                    <tr class="row" id="model_list_row">
+                        <th class="col" id="model_list_column">Name</th>
+                        <th class="col" id="model_list_column">Phone</th>
+                        <th class="col" id="model_list_column">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="row" id="model_list_row">
+                        <td class="col" id="model_list_column">{{ row.name }}</td>
+                        <td class="col" id="model_list_column">{{ row.phone }}</td>
+                        <td class="col" id="model_list_column">{{ row.email }}</td>
+                    </tr>
+                    <tr class="row" id="model_list_row">
+                        <th class="col" id="model_list_column">Image Path</th>
+                    </tr>
+                    <tr class="row" id="model_list_row">
+                        <td class="col" id="model_list_column">{{ row.image }}</td>
+                    </tr>
+                    <tr class="row" id="model_list_row">
+                        <td class="col" id="model_list_column">
+                            <form action="/profiles" method="post">
+                                <button id="model_delete" type="submit" value="{{ row.id }}" name="delete">Delete Model</button>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

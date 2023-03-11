@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+<title>My Model Website: Add A Model</title>
+<meta name="description" content="This is the add a model page for my model agency website">
+
+{% endblock %}
+
+{% block main %}
+
+<div class="container">
+
+    <div class="content">
+
+        <h1>Model Profiles</h1>
+
+        <div style="width:70%; padding-top: 10px; margin:0 auto;" id="dashbord_menu">
+            <form action="/admin">
+                <button id="dashboard_button" type="submit">Return To Dashboard</button><br>
+            </form>
+            <form action="/profiles">
+                <button id="dashboard_button" type="submit">Return To Model Profiles</button><br>
+            </form>
+        </div>
+        
+        <div class="contact_form" style="width:70%; padding-top: 10px; margin:0 auto;">
+            <form action="/add_model" method="post" enctype="multipart/form-data">
+                <div class="row" id="add_model" style="width:95%; padding-top: 15px; margin:0 auto;">
+                    <div class="col">
+                        <label for="model_name" id="form_label" name="name">Model Name*</label><br>
+                        <input type="text" id="model_name" name="model_name" placeholder="Model Name" autocomplete="off">
+                    </div>
+                    <div class="col">
+                        <label for="model_phone" id="form_label" name="phone">Phone Number*</label><br>
+                        <input type="text" id="model_phone" name="model_phone" placeholder="Phone Number" autocomplete="off">
+                    </div>
+                    <div class="col-5">
+                        <label for="model_email" id="form_label" name="email">Email*</label><br>
+                        <input type="text" id="model_email" name="model_email" placeholder="Email Address" autocomplete="off">
+                    </div>
+                </div>
+                <div class="row" id="add_model" style="width:95%; padding-top: 15px; margin:0 auto;">
+                    <div class="col">
+                          <label for="model_image" id="form_label" name="image">Select A Profile Image (.png, .jpg, .jpeg ONLY):</label>
+                          <input type="file" id="model_image" name="model_image" accept=".png, .jpg, .jpeg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        {% if error %}
+                            <a id="error_message">
+                            <p class=model_error><strong>Error:</strong> {{ error }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="submit" id="contact_button" value="Add Model">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

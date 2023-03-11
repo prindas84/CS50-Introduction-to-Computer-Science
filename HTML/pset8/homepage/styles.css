@@ -1,0 +1,200 @@
+header #heading {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Patua One";
+}
+
+.menu {
+    display: flex;
+    padding-top: 15px;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+#nav {
+    width: 100%;
+    padding-left: 0% !important;
+    text-align: center;
+    font-family: "Montserrat" !important;
+    letter-spacing: 2px !important;
+    font-size: 15px !important;
+    text-transform: uppercase;
+}
+
+#nav li {
+    min-width: 180px;
+    display: inline-block;
+}
+
+#nav a {
+    color: black;
+}
+
+#nav a:hover {
+    text-decoration: none;
+}
+
+.menu a:hover {
+    border-bottom: solid 3px black;
+    padding-bottom: 16px;
+}
+
+footer {
+    text-align: center;
+    font-family: "Patua One";
+    background-color: black;
+    margin-bottom: -16px;
+}
+
+footer p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    font-size: 16px;
+}
+
+footer a, footer a:hover {
+    color: grey;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#banner_image {
+    border-bottom: solid 1px black;
+}
+
+.content {
+    max-width: 1080px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 16px;
+    padding-bottom: 30px;
+
+}
+
+.content h1 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Patua One";
+    margin-bottom: 15px;
+}
+
+.content h2 {
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Patua One";
+    margin-bottom: 15px;
+}
+
+.content h3 {
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Patua One";
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 18px;
+    text-align: justify;
+    font-family: "Montserrat" !important;
+}
+
+.content li {
+    font-size: 18px;
+    text-align: left;
+    font-family: "Montserrat" !important;
+}
+
+.images {
+    margin-top: 30px;
+}
+
+#model_row {
+    margin: 20px -13px;
+}
+
+#model_column {
+    text-align: center;
+}
+
+#model_column h4 {
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-family: "Patua One";
+    font-size: 20px;
+}
+
+#model {
+    max-width: 100%;
+    border: solid 1px black;
+}
+
+#about_image {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    width: 47%;
+    border: solid 1px black;
+}
+
+.contact_form input {
+    width: 100%;
+    margin-bottom: 15px;
+    min-height: 40px;
+}
+
+.contact_form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    min-height: 120px;
+}
+
+.contact_form {
+    padding-bottom: 50px;
+}
+
+#enquiry_name, #enquiry_company, #enquiry_phone, #enquiry_email, #enquiry_message {
+    padding-left: 10px;
+}
+
+#enquiry_message {
+    padding-top: 5px;
+}
+
+#contact_button {
+    margin-top: 13px;
+    max-width: 30%;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "Patua One";
+    text-align: center;
+    float: right;
+    border: solid 2px black;
+    border-radius: 5px;
+    background: white;
+}
+
+#contact_button:hover {
+    color: white;
+    background: black;
+}
+
+#form_label {
+    font-size: 18px;
+    font-family: "Patua One";
+}
+
+::placeholder {
+    font-size: 18px;
+    font-family: "Montserrat"
+}
+
+
+

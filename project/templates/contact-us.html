@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+<title>My Model Website: Contact Us</title>
+<meta name="description" content="This is the contact us page for my model agency website">
+
+{% endblock %}
+
+{% block main %}
+
+{% if scrollToAnchor %}
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.location.hash = "#{{ scrollToAnchor }}";
+    });
+</script>
+{% endif %}
+
+<style>
+    #contact {
+        border-bottom: solid 3px black;
+        padding-bottom: 16px;
+    }
+</style>
+
+<div class="container">
+
+    <div class="content">
+
+        <h1>Contact Us</h1>
+
+        <p>
+        Lorem ipsum dolor sit amet, quando recusabo qui at. Inani mollis ius ei, nam id accusam posidonium. Cum ne facer sanctus, aliquid neglegentur ex nam. Idque commune ut mei, duis debet nec ne. Solum aperiam mel at, per sumo verear ex. Lorem ipsum dolor sit amet, quando recusabo qui at. Inani mollis ius ei, nam id accusam posidonium. Cum ne facer sanctus, aliquid neglegentur ex nam. Idque commune ut mei, duis debet nec ne. Solum aperiam mel at, per sumo verear ex. Lorem ipsum dolor sit amet, quando recusabo qui at. Inani mollis ius ei, nam id accusam posidonium. Cum ne facer sanctus, aliquid neglegentur ex nam. Idque commune ut mei, duis debet nec ne. Solum aperiam mel at, per sumo verear ex.
+        </p>
+        <br>
+
+        <h3>Submit Your Enquiry Below</h3>
+
+        <div class="contact_form" style="width:70%; padding-top: 10px; margin:0 auto;">
+            <form action="/submit" method="post">
+                <div class="row">
+                    <div class="col">
+                        {% if error %}
+                            <a id="error_message">
+                            <p class=contact_error><strong>Error:</strong> {{ error }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="enquiry_name" id="form_label" name="name">Name*</label><br>
+                        <input type="text" id="enquiry_name" name="enquiry_name" placeholder="What is your Full Name?" autocomplete="off">
+                    </div>
+                    <div class="col">
+                        <label for="enquiry_company" id="form_label" name="company">Company Name</label><br>
+                        <input type="text" id="enquiry_company" name="enquiry_company" placeholder="What is your Company Name?" autocomplete="off">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="enquiry_phone" id="form_label" name="phone">Phone*</label><br>
+                        <input type="text" id="enquiry_phone" name="enquiry_phone" placeholder="What is your Phone Number?" autocomplete="off">
+                    </div>
+                    <div class="col">
+                        <label for="enquiry_email" id="form_label" name="email">Email*</label><br>
+                        <input type="text" id="enquiry_email" name="enquiry_email" placeholder="What is your Email Address?" autocomplete="off">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="enquiry_message" id="form_label" name="message">Message*</label><br>
+                        <textarea id="enquiry_message" name="enquiry_message" placeholder="How can we help you today?" autocomplete="off"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="submit" id="contact_button" value="Contact Us">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

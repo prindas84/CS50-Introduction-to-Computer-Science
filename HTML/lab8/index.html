@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+        function correctOne(id){
+            document.querySelector("#" + id).style.backgroundColor = "green";
+            document.querySelector("#feedbackOne").innerHTML = "Correct!";
+
+        }
+
+        function incorrectOne(id){
+            document.querySelector("#" + id).style.backgroundColor = "red";
+            document.querySelector("#feedbackOne").innerHTML = "Incorrect";
+
+        }
+
+        function checkTwo(){
+            let answer = "yes"
+            let response = document.querySelector('#response').value.toLowerCase();
+            
+            if (answer == response)
+            {
+                document.querySelector("#response").style.backgroundColor = "green";
+                document.querySelector("#feedbackTwo").innerHTML = "Correct!";
+            }
+            else
+            {
+                document.querySelector("#response").style.backgroundColor = "red";
+                document.querySelector("#feedbackTwo").innerHTML = "Incorrect";
+            }
+        }
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                
+                <h3>Who is the head of CS50 at Harvard University?</h3>
+                
+                <button onclick="incorrectOne(this.id)" class="buttonOne" id="one" type="submit">Doug Lloyd</button>
+                <button onclick="incorrectOne(this.id)" class="buttonOne" id="two" type="submit">Tina Ward</button>
+                <button onclick="correctOne(this.id)" class="buttonOne" id="three" type="submit">David Malan</button>
+                <button onclick="incorrectOne(this.id)" class="buttonOne" id="four" type="submit">Vanessa Montgomery</button>
+                <button onclick="incorrectOne(this.id)" class="buttonOne" id="five" type="submit">Brian Yu</button>
+                
+                <p id="feedbackOne"></p>
+    
+            </div>
+
+            <div class="section">
+                
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                
+                <h3>Can you study CS50 online?</h3>
+                
+                <input type="text" class="inputText" id="response" autocomplete="off">
+                <button onclick="checkTwo()" class="buttonTwo" type="submit">Check Answer</button>
+                
+                <p id="feedbackTwo"></p>
+                
+            </div>
+            
+        </div>
+    </body>
+</html>

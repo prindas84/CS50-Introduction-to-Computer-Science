@@ -1,0 +1,6 @@
+OS
+CS50
+Flask
+Flask-Session
+Werkzeug
+Tempfile

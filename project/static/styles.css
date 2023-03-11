@@ -1,0 +1,361 @@
+header #heading {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Patua One";
+}
+
+.menu {
+    display: flex;
+    padding-top: 15px;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+#nav {
+    width: 100%;
+    padding-left: 0% !important;
+    text-align: center;
+    font-family: "Montserrat" !important;
+    letter-spacing: 2px !important;
+    font-size: 15px !important;
+    text-transform: uppercase;
+}
+
+#nav li {
+    min-width: 180px;
+    display: inline-block;
+}
+
+#nav a {
+    color: black;
+}
+
+#nav a:hover {
+    text-decoration: none;
+}
+
+.menu a:hover {
+    border-bottom: solid 3px black;
+    padding-bottom: 16px;
+}
+
+footer {
+    font-family: "Patua One";
+    background-color: black;
+    margin-bottom: -16px;
+}
+
+footer p {
+    padding-top: 15px;
+    color: white;
+    font-size: 16px;
+}
+
+#footer_col_two a, #footer_col_two a:hover {
+    color: grey;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#footer_col_one a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#footer_col_one a:hover  {
+    color: #c3bdbd;
+}
+
+#banner_image {
+    border-bottom: solid 1px black;
+}
+
+.content {
+    max-width: 1080px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    min-height: 500px;
+
+}
+
+.content h1 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Patua One";
+    margin-bottom: 15px;
+}
+
+.content h2 {
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Patua One";
+    margin-bottom: 15px;
+}
+
+.content h3 {
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Patua One";
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 18px;
+    text-align: justify;
+    font-family: "Montserrat" !important;
+}
+
+.content li {
+    font-size: 18px;
+    text-align: left;
+    font-family: "Montserrat" !important;
+}
+
+.images {
+    margin-top: 30px;
+}
+
+#model_row {
+    margin: 20px -13px;
+}
+
+#model_column {
+    text-align: center;
+}
+
+#model_column h4 {
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-family: "Patua One";
+    font-size: 20px;
+}
+
+#model {
+    max-width: 100%;
+    border: solid 1px black;
+}
+
+#about_image {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    width: 47%;
+    border: solid 1px black;
+}
+
+.contact_form input {
+    width: 100%;
+    margin-bottom: 15px;
+    min-height: 40px;
+}
+
+.contact_form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    min-height: 120px;
+}
+
+.contact_form {
+    padding-bottom: 50px;
+}
+
+#enquiry_name, #enquiry_company, #enquiry_phone, #enquiry_email, #enquiry_message, #model_name, #model_phone, #model_email {
+    padding-left: 10px;
+}
+
+#enquiry_message {
+    padding-top: 5px;
+}
+
+#contact_button {
+    color: white;
+    background: black;
+    margin-top: 13px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "Patua One";
+    text-align: center;
+    float: right;
+    border: none;
+    border-radius: 5px;
+}
+
+#form_label {
+    font-size: 18px;
+    font-family: "Patua One";
+}
+
+::placeholder {
+    font-size: 18px;
+    font-family: "Montserrat"
+}
+
+#footer_col_one {
+    text-align: left;
+    margin-left: 50px;
+}
+
+#footer_col_two {
+    text-align: right;
+    margin-right: 50px;
+}
+
+#login_button {
+    color: white;
+    margin-top: 13px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "Patua One";
+    text-align: center;
+    float: right;
+    border: none;
+    border-radius: 5px;
+    background: black;
+}
+
+.login_error{
+    text-align: center!important;
+    color: #cd3a3a;
+}
+
+.flashes {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #ffc02b;
+    border-bottom: solid 1px black;
+    animation: hideAnimation 0s ease-in 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+
+.flashes p {
+    margin-bottom: 0px;
+}
+
+#dashboard_button {
+    margin-top: 13px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "Patua One";
+    text-align: center;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    min-width: 85%;
+    border: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin:auto;
+    display:block;
+}
+
+#dashbord_menu {
+    border: solid 1px black;
+    padding-top: 30px !important;
+    padding-bottom: 5px !important;
+}
+
+.contact_error{
+    text-align: center!important;
+    color: #cd3a3a;
+}
+
+#enquiry_table th {
+    border-bottom: solid 1px black;
+}
+
+#enquiry_table td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#enquiry_row {
+    text-align: left;
+    min-width: 25%;
+}
+
+#enquiry_column {
+    text-align: left;
+}
+
+#enquiry_delete {
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: "Patua One";
+    border-radius: 5px;
+    background: #ffc02b;
+    color: black;
+    min-width: 25%;
+    border: solid 2px black;
+    padding: 7px 10px 7px 10px;
+}
+
+#empty_list {
+    text-align: center;
+}
+
+#add_model {
+    margin-top: 10px;
+}
+
+.model_error{
+    text-align: center!important;
+    color: #cd3a3a;
+    margin-bottom: 5px !important;
+}
+
+#model_delete {
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: "Patua One";
+    border-radius: 5px;
+    background: #ffc02b;
+    color: black;
+    min-width: 25%;
+    border: solid 2px black;
+    padding: 7px 10px 7px 10px;
+    
+}
+
+#model_table th {
+    border-bottom: solid 1px black;
+}
+
+#model_table td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#model_list_row {
+    text-align: left;
+    min-width: 25%;
+}
+
+#model_list_column {
+    text-align: left;
+}
+
+
+

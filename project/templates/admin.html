@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+<title>My Model Website: Admin Dashboard</title>
+<meta name="description" content="This is the admin dashboard for my model agency website">
+
+{% endblock %}
+
+{% block main %}
+
+<div class="container">
+
+    <div class="content">
+
+        <h1>Dashboard</h1>
+
+        <div style="width:70%; padding-top: 10px; margin:0 auto;" id="dashbord_menu">
+            <form action="/enquiries">
+                <button id="dashboard_button" type="submit">Customer Enquiries</button><br>
+            </form>
+            <form action="/profiles">
+                <button id="dashboard_button" type="submit">Model Profiles</button><br>
+            </form>
+            <form action="/logout">
+                <button id="dashboard_button" type="submit">Logout</button><br>
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
